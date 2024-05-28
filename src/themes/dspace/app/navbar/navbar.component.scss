@@ -104,28 +104,28 @@ a.navbar-brand {
 }
 
 .navbar2 {
-  padding: 10px 0; /* Espaciado interior del navbar */
+  padding: 10px 0;
 }
 
 .navbar-menu {
-  list-style: none; /* Quita los puntos de lista */
+  list-style: none; 
   padding: 0;
-  text-align: center; /* Centra los elementos horizontalmente */
+  text-align: center; 
 }
 
 .navbar-menu li {
-  display: inline-block; /* Los elementos se muestran en línea */
-  margin-right: 20px; /* Espacio entre los elementos */
+  display: inline-block; 
+  margin-right: 20px; 
 }
 
 .navbar-menu li:last-child {
-  margin-right: 0; /* Quita el margen del último elemento */
+  margin-right: 0; 
 }
 
 .navbar-menu li a {
-  color: #333; /* Color del texto */
-  text-decoration: none; /* Quita el subrayado del enlace */
-  padding: 5px 10px; /* Espaciado interior del enlace */
+  color: #333; 
+  text-decoration: none; 
+  padding: 5px 10px; 
   
 }
 
