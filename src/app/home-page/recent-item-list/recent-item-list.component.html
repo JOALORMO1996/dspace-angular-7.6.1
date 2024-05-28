@@ -1,4 +1,53 @@
-<ng-container *ngVar="(itemRD$ | async) as itemRD">
+<div class="title">
+        <h2 style="font-weight: bold;">Envios recientes</h2>
+      </div>
+      <div class="content-container">
+        <div class="icon previous-icon">
+                <i class="fa-solid fa-chevron-left"></i>
+        </div>
+        <div class="image-container">
+                <img src="../../../assets/images/logo.jpg" alt="Descripción de la imagen">
+            </div>
+        <div class="content">
+            <span class="subtitulo">Nombre del Articulo</span>
+            <p>Explorando la esencia del conocimiento, MetaBiblioteca se erige como un faro en el vasto océano del saber. En su corazón, cada artículo es un destello de luz, iluminando las mentes ávidas de descubrimiento. Desde las profundidades de la historia hasta los horizontes de la tecnología, cada página ofrece una ventana hacia la comprensión y el aprendizaje. Bienvenido a un viaje donde las palabras son más que simples letras; son puentes que conectan mundos, ideas y perspectivas en el universo infinito del conocimiento.</p>
+        </div>
+        <div class="icon next-icon">
+                <i class="fa-solid fa-chevron-right"></i>
+        </div>
+    </div>
+          
+
+    <div class="container">
+        <div class="rectangle  blue">
+            <i class="fa-solid fa-newspaper"></i>
+            <h3 class="title2">Publicaciones</h3>
+            <span class="number">0</span>
+        </div>
+        <div class="rectangle orange">
+            <i class="fa-solid fa-building"></i>
+            <h3 class="title2">Organizaciones</h3>
+            <span class="number">0</span>
+        </div>
+        <div class="rectangle green">
+            <i class="fa-solid fa-users"></i>
+            <h3 class="title2">Personas</h3>
+            <span class="number">2</span>
+        </div>
+        <div class="rectangle purple">
+        <i class="fa-solid fa-lightbulb"></i>
+            <h3 class="title2">Proyectos</h3>
+            <span class="number">0</span>
+        </div>
+    </div>
+    <br>
+    <div class="container2">
+        <div class="image-rectangle" style="background-image: url('../../../assets/images/goolge-escolar.png');"></div>
+        <div class="image-rectangle" style="background-image: url('../../../assets/images/openAire.png');"></div>
+        <div class="image-rectangle" style="background-image: url('../../../assets/images/base.png');"></div>
+        <div class="image-rectangle" style="background-image: url('../../../assets/images/core.jpg');"></div>
+    </div>
+<!--<ng-container *ngVar="(itemRD$ | async) as itemRD">
         <div class="mt-4" [ngClass]="placeholderFontClass" *ngIf="itemRD?.hasSucceeded && itemRD?.payload?.page.length > 0" @fadeIn>
                 <div class="d-flex flex-row border-bottom mb-4 pb-4"></div>
                 <h2> {{'home.recent-submissions.head' | translate}}</h2>
@@ -12,3 +61,4 @@
         <ds-loading *ngIf="!itemRD || itemRD.isLoading" message="{{'loading.recent-submissions' | translate}}">
         </ds-loading>
 </ng-container>
+-->
