@@ -1,5 +1,12 @@
 <form #form="ngForm" (ngSubmit)="onSubmit(form.value)" action="/search">
-    <div>
+    <div class="search-container">
+      <input type="text" [(ngModel)]="query" name="query" class="search-input" [placeholder]="searchPlaceholder">
+      <button type="submit" class="search-button" [attr.data-test]="'search-button' | dsBrowserOnly">
+        <i class="fas fa-search"></i>
+      </button>
+    </div>
+  </form>
+   <!-- <div>
         <div class="form-group input-group">
             <div *ngIf="showScopeSelector" class="input-group-prepend">
                 <button class="scope-button btn btn-outline-secondary text-truncate"
@@ -15,5 +22,59 @@
             <button type="submit" class="search-button btn btn-{{brandColor}}" [attr.data-test]="'search-button' | dsBrowserOnly"><i class="fas fa-search"></i> {{ ('search.form.search' | translate) }}</button>
         </span>
         </div>
+    </div>--->
+
+    <div class="container-grid">
+        <div class="square-container trabajo-de-grado">
+          <i class="fas fa-graduation-cap"></i>
+          <span>Trabajo de<br>Grado</span>
+        </div>
+        <div class="square-container tesis">
+          <i class="fas fa-file-alt"></i>
+          <span>Tesis</span>
+        </div>
+        <div class="square-container ova">
+          <i class="fas fa-book"></i>
+          <span>OVAS</span>
+        </div>
+        <div class="square-container editorial">
+          <i class="fas fa-newspaper"></i>
+          <span>Editorial</span>
+        </div>
+        <div class="square-container memoria-editorial">
+          <i class="fas fa-archive"></i>
+          <span>Memoria<br>Institucional</span>
+        </div>
+      </div>
+
+      <div class="title">
+        <h2 style="font-weight: bold;">Navegar</h2>
     </div>
-</form>
+
+      <!-- Contenedores de círculos -->
+<div class="circle-container-grid">
+    <div class="circle-container colleciones">
+        <i class="fa-solid fa-bars"></i>
+      <span>Navegar por Colecciones</span>
+    </div>
+    <div class="circle-container titulo">
+        <i class="fa-solid fa-book-open-reader"></i>
+      <span>Navegar por titulo</span>
+    </div>
+    <div class="circle-container autores">
+        <i class="fa-solid fa-user"></i>
+      <span>Navegar por Autores</span>
+    </div>
+    <div class="circle-container fecha">
+        <i class="fa-solid fa-calendar-days"></i>
+      <span>Navegar Por Fecha</span>
+    </div>
+    <div class="circle-container materia">
+        <i class="fa-solid fa-file-signature"></i>
+      <span>Navegar Por Materias</span>
+    </div>
+    <div class="circle-container tipo-material">
+        <i class="fa-regular fa-folder-open"></i>
+        <span>Navegar Por Material</span>
+      </div>
+  </div>

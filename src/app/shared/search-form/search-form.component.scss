@@ -7,3 +7,153 @@
 .scope-button {
   max-width: var(--ds-search-form-scope-max-width);
 }
+
+//MI CODIGO
+.search-container {
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  position: relative; 
+  width: 100%; 
+  margin: 0 auto; 
+  margin-bottom: 40px;
+}
+
+.search-input {
+  width: 100%;
+  padding: 5px 5px 5px 5px; 
+  border: 2px solid #B0076D;
+  border-radius: 25px; 
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.search-input:focus {
+  border-color: #007bff; 
+}
+
+.search-button {
+  position: absolute; 
+  right: 15px; 
+  background: none; 
+  border: none; 
+  cursor: pointer;
+  color: #B0076D; 
+  outline: none;
+  padding: 0; 
+  font-size: 20px; 
+}
+
+.search-button:hover {
+  color: #007bff; 
+}
+
+.container-grid {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap; 
+  margin-bottom: 80px;
+}
+
+.square-container {
+  width: 150px; 
+  height: 150px; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 16px; 
+  border: 2px solid; 
+  border-radius: 10px; 
+  transition: background-color 0.3s, border-color 0.3s;
+  cursor: pointer;
+}
+
+.square-container i {
+  font-size: 40px; /* Tamaño del icono */
+  margin-bottom: 10px; /* Espacio entre el icono y el texto */
+}
+
+.trabajo-de-grado {
+  border-color: #B0076D; 
+  ; 
+}
+
+.tesis {
+  border-color: #e2df0c; 
+}
+
+.ova {
+  border-color: #268efd; 
+}
+
+.editorial {
+  border-color: #e2df0c; 
+}
+
+.memoria-editorial {
+  border-color: #268efd; 
+}
+
+.square-container:hover {
+  background-color: #f0f0f0; 
+}
+
+.title {
+  font-weight: bold !important;
+  text-align: center; /* Centra el título */
+  margin-bottom: 20px; /* Espacio inferior */
+  color: #B0076D; /* Color del texto */
+  margin-bottom: 40px;
+}
+
+/* Estilos para los círculos */
+.circle-container-grid {
+  display: flex;
+  justify-content: space-around; /* Espacio entre los contenedores */
+  flex-wrap: wrap; /* Permite que los contenedores se ajusten en varias líneas si es necesario */
+  gap: 20px; /* Espacio entre los contenedores */
+  margin-bottom: 70px;
+}
+
+.circle-container {
+  width: 100px; /* Diámetro del círculo */
+  height: 100px; /* Diámetro del círculo */
+  position: relative; /* Permite posicionar el texto */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 16px; /* Tamaño del texto */
+  border-radius: 50%; /* Borde circular */
+  cursor: pointer;
+}
+
+.circle-container i {
+  font-size: 40px; /* Tamaño del icono */
+}
+
+/* Estilos para el texto fuera del círculo */
+.circle-container span {
+  position: absolute;
+  bottom: -50px; /* Distancia del texto al círculo */
+  width: 100%;
+  text-align: center;
+}
+
+/* Colores de borde para cada círculo */
+/* Colores de borde y texto para cada círculo */
+.colleciones { border: 2px solid #B0076D; color: #B0076D; }
+.titulo { border: 2px solid #e2df0c; color: #e2df0c; }
+.autores { border: 2px solid #268efd; color: #268efd; }
+.fecha { border: 2px solid #B0076D; color: #B0076D; }
+.materia { border: 2px solid #e2df0c; color: #e2df0c; }
+.tipo-material { border: 2px solid #268efd; color: #268efd; }
+
+
+/* Cambia el color del borde al pasar el ratón */
+.circle-container:hover {
+  border-color: #333;
+}
